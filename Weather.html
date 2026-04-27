@@ -5,13 +5,36 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Weather Forecast & Clothing Recommender</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      padding: 24px;
+    }
+
+    .container {
+      max-width: 950px;
+      margin: 0 auto;
+    }
+  </style>
 </head>
+
 
 <body>
   <div class="container">
     <h1>Weather Forecast & Clothing Recomender</h1>
     <p class="subtitle">Check upcoming days and get outfit suggestions</p>
-    <p class="controls">
+    <div class="controls">
+      <input id="cityInput" type="text" placeholder="Enter city name" />
+      <button id="searchBtn">Get Forecast</button>
+      <button id="geoBtn" class="secondary">Use My Location</button>
+    </div>
+    <div id="status"></div>
+    <div id="locationTitle" class="location-title"></div>
+    <div id="forecastGrid" class="grid"></div>
+  </div>
 </body>
 
 </html>
