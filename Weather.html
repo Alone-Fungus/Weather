@@ -18,6 +18,70 @@
       max-width: 950px;
       margin: 0 auto;
     }
+
+    .controls {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
+    }
+
+    input {
+      flex: 1;
+      min-width: 220px;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #334155;
+      background: #e2e8f0;
+    }
+
+    button {
+      padding: 10px 14px;
+      border: none;
+      border-radius: 8px;
+      background: #38bd38;
+      color: #06243b;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button.secondary {
+      background: #334155;
+      color: #e2e8f0;
+    }
+
+    #status {
+      margin: 8px 0;
+      color: #94a3b8;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+    }
+
+    .card {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 12px;
+      padding: 12px;
+    }
+
+    .date {
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+
+    .meta {
+      font-size: 0.9rem;
+      margin: 4px 0;
+    }
+
+    .recomend {
+      margin-top: 8px;
+      color: #dbeafe;
+    }
   </style>
 </head>
 
@@ -35,6 +99,7 @@
     <div id="locationTitle" class="location-title"></div>
     <div id="forecastGrid" class="grid"></div>
   </div>
+
 </body>
 
 </html>
